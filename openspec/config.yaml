@@ -12,8 +12,8 @@ context: |
   Reinicio fresco del repo proyecto-tinku (v1, llegó a Ola 2.5) — las decisiones v1 viven en
   engram bajo project="proyecto-tinku" y se consultan antes de re-explorar features que ya existieron.
 
-strict_tdd: false  # activar cuando Vitest esté instalado
-test_command: pnpm test  # futuro — cuando package.json exista
+strict_tdd: true  # ACTIVADO — Vitest instalado en bootstrap
+test_command: pnpm test
 
 testing:
   runner:
