@@ -1,0 +1,2 @@
+# Specs viven acá después del archive de cada change.
+# Durante un change activo, los delta specs viven en openspec/changes/{change-name}/specs/

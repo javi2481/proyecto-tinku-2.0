@@ -1,0 +1,82 @@
+schema: spec-driven
+
+project: proyecto-tinku-2.0
+version: 1.0
+created: 2026-04-19
+persistence_mode: hybrid  # files (this dir) + engram mirror
+
+context: |
+  Tinku 2.0 — plataforma pedagógica tri-lateral (alumno/padre/docente) con forma de juego 2D.
+  Stack declarado: Next.js 14 App Router + TypeScript estricto + Tailwind + shadcn/ui + Phaser 4 +
+  Supabase (RLS desde schema 1) + Vitest + Playwright. Estado actual: pre-código, docs completos.
+  Reinicio fresco del repo proyecto-tinku (v1, llegó a Ola 2.5) — las decisiones v1 viven en
+  engram bajo project="proyecto-tinku" y se consultan antes de re-explorar features que ya existieron.
+
+strict_tdd: false  # activar cuando Vitest esté instalado
+test_command: pnpm test  # futuro — cuando package.json exista
+
+testing:
+  runner:
+    framework: vitest
+    command: pnpm test
+    installed: false
+  layers:
+    unit:
+      tool: vitest
+      installed: false
+    integration:
+      tool: "@testing-library/react + vitest"
+      installed: false
+    e2e:
+      tool: playwright
+      installed: false
+  coverage:
+    command: vitest --coverage
+    installed: false
+  quality:
+    linter: eslint
+    type_checker: "tsc --noEmit"
+    formatter: prettier
+    installed: false
+
+rules:
+  proposal:
+    - Declarar explícitamente a cuál de los 3 usuarios (alumno/padre/docente) afecta la feature
+    - Identificar módulos/paquetes afectados
+    - Incluir rollback plan para cambios riesgosos
+    - Consultar engram project="proyecto-tinku" (v1) antes de re-explorar features conocidas
+
+  specs:
+    - Given/When/Then para escenarios
+    - RFC 2119 (MUST, SHALL, SHOULD, MAY)
+    - Especificar contratos de Server Actions (signature, input, output, errores)
+    - Documentar RLS policies para toda tabla nueva
+
+  design:
+    - Sequence diagrams para flujos Phaser↔React
+    - Documentar cada decisión arquitectónica con rationale
+    - Especificar estructura de estado Zustand cuando aplique
+    - Si toca IA: especificar modelo OpenRouter, prompt file path, parámetros
+
+  tasks:
+    - Agrupar por fase (infra, implementación, testing, docs)
+    - Numeración jerárquica (1.1, 1.2)
+    - Cada task completable en una sesión
+    - Incluir task de tests desde el inicio (preparación para Strict TDD)
+
+  apply:
+    - Seguir convenciones del docs/TINKU.md (Server Actions, RLS, Zustand, no localStorage pedagógico)
+    - Conventional commits sin AI attribution
+    - No `build` después de cambios
+    - Prompts de agentes IA en /prompts/*.md
+
+  verify:
+    - Ejecutar tests si el runner existe (cuando aplique)
+    - Comparar implementación contra cada escenario del spec
+    - Verificar RLS activo en tablas nuevas
+    - Verificar que no se usa localStorage/sessionStorage para estado pedagógico
+
+  archive:
+    - Sync delta specs a openspec/specs/
+    - Mirrorear archive-report a engram topic_key sdd/{change}/archive-report
+    - Warn antes de merges con removals grandes
