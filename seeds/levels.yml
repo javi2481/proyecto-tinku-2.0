@@ -1,0 +1,304 @@
+# seeds/levels.yml
+# Niveles de progresión naval del jugador (1-50)
+# Fuente: docs/TINKU.md §9 — Sistema de gamificación
+
+levels:
+  - level: 1
+    title: "Cadete Espacial"
+    xp_required: 0
+    xp_to_next: 100
+    description: "Tu viaje recién empieza. Cada ejercicio te acerca a las estrellas."
+
+  - level: 2
+    title: "Cadete Espacial"
+    xp_required: 100
+    xp_to_next: 150
+    description: "Ya estás navegando. Seguí así."
+
+  - level: 3
+    title: "Explorador Novato"
+    xp_required: 250
+    xp_to_next: 150
+    description: "Descubriste las primeras islas. Hay mucho por explorar."
+
+  - level: 4
+    title: "Explorador Novato"
+    xp_required: 400
+    xp_to_next: 200
+    description: "Cada ejercicio suma. ¡La nave va tomando forma!"
+
+  - level: 5
+    title: "Explorador Novato"
+    xp_required: 600
+    xp_to_next: 200
+    description: "Medio centenar de XP. Los conceptos básicos ya son tuyos."
+
+  - level: 6
+    title: "Navegante"
+    xp_required: 800
+    xp_to_next: 250
+    description: "Navegás con facilidad. Los números son tus estrellas guía."
+
+  - level: 7
+    title: "Navegante"
+    xp_required: 1050
+    xp_to_next: 250
+    description: "Sólido como un asteroide. Seguí practicando."
+
+  - level: 8
+    title: "Navegante"
+    xp_required: 1300
+    xp_to_next: 300
+    description: "El espacio se te hace familiar. Ya no sos un recién llegado."
+
+  - level: 9
+    title: "Navegante Experto"
+    xp_required: 1600
+    xp_to_next: 300
+    description: "Dominás las rutas básicas. Las islas te conocen."
+
+  - level: 10
+    title: "Navegante Experto"
+    xp_required: 1900
+    xp_to_next: 350
+    description: "¡Primer hito! 10 niveles y contando. La nave brilla."
+
+  - level: 11
+    title: "Piloto Cósmico"
+    xp_required: 2250
+    xp_to_next: 350
+    description: "El cosmos se abre ante vos. Los conceptos se profundizan."
+
+  - level: 12
+    title: "Piloto Cósmico"
+    xp_required: 2600
+    xp_to_next: 400
+    description: "Maniobrás con precisión. Los ejercicios son más desafiantes."
+
+  - level: 13
+    title: "Piloto Cósmico"
+    xp_required: 3000
+    xp_to_next: 400
+    description: "Los desafíos se ponen interesantes. No hay retroceso."
+
+  - level: 14
+    title: "Piloto Avanzado"
+    xp_required: 3400
+    xp_to_next: 450
+    description: "Cada concepto dominado es una constelación más."
+
+  - level: 15
+    title: "Piloto Avanzado"
+    xp_required: 3850
+    xp_to_next: 450
+    description: "Medio camino al máximo. ¡Lo estás haciendo genial!"
+
+  - level: 16
+    title: "Comandante"
+    xp_required: 4300
+    xp_to_next: 500
+    description: "Los otros cadetes te miran con respeto."
+
+  - level: 17
+    title: "Comandante"
+    xp_required: 4800
+    xp_to_next: 500
+    description: "Tu nave es rápida y precisa."
+
+  - level: 18
+    title: "Comandante"
+    xp_required: 5300
+    xp_to_next: 550
+    description: "Los ejercicios avanzados ya son tu territorio."
+
+  - level: 19
+    title: "Comandante Superior"
+    xp_required: 5850
+    xp_to_next: 550
+    description: "Pocos llegan hasta acá. Sos uno de los mejores."
+
+  - level: 20
+    title: "Comandante Superior"
+    xp_required: 6400
+    xp_to_next: 600
+    description: "Segundo hito. La mitad del camino al Capitán."
+
+  - level: 21
+    title: "Capitán"
+    xp_required: 7000
+    xp_to_next: 600
+    description: "Tu nave tiene logo propio. Los conceptos son dominios."
+
+  - level: 22
+    title: "Capitán"
+    xp_required: 7600
+    xp_to_next: 650
+    description: "Las estrellas te reconocen. Seguí así."
+
+  - level: 23
+    title: "Capitán"
+    xp_required: 8250
+    xp_to_next: 650
+    description: "Tu dominio de los conceptos es notable."
+
+  - level: 24
+    title: "Capitán Experto"
+    xp_required: 8900
+    xp_to_next: 700
+    description: "Los ejercicios más difíciles son tu tierra firme."
+
+  - level: 25
+    title: "Capitán Experto"
+    xp_required: 9600
+    xp_to_next: 700
+    description: "Cuarto hito. 25 niveles. La constelación es tuya."
+
+  - level: 26
+    title: "Almirante Novato"
+    xp_required: 10300
+    xp_to_next: 750
+    description: "Un rango nuevo. La flota te necesita."
+
+  - level: 27
+    title: "Almirante Novato"
+    xp_required: 11050
+    xp_to_next: 750
+    description: "Cada ejercicio suma para tu flota entera."
+
+  - level: 28
+    title: "Almirante Novato"
+    xp_required: 11800
+    xp_to_next: 800
+    description: "Los conceptos avanzados ya son pan comido."
+
+  - level: 29
+    title: "Almirante"
+    xp_required: 12600
+    xp_to_next: 800
+    description: "Tu nave es la más rápida de la flota."
+
+  - level: 30
+    title: "Almirante"
+    xp_required: 13400
+    xp_to_next: 850
+    description: "Tercer hito. Vas por la recta final."
+
+  - level: 31
+    title: "Almirante"
+    xp_required: 14250
+    xp_to_next: 850
+    description: "Los mares de conocimiento son tuyos."
+
+  - level: 32
+    title: "Almirante Superior"
+    xp_required: 15100
+    xp_to_next: 900
+    description: "Dominás la matemática de los grados superiores."
+
+  - level: 33
+    title: "Almirante Superior"
+    xp_required: 16000
+    xp_to_next: 900
+    description: "Pocos alcanzan este rango. Sos legendario."
+
+  - level: 34
+    title: "Almirante Superior"
+    xp_required: 16900
+    xp_to_next: 950
+    description: "La flota entera te sigue."
+
+  - level: 35
+    title: "Almirante Experto"
+    xp_required: 17850
+    xp_to_next: 950
+    description: "Séptimo hito. Tu nave es un clásico del cosmos."
+
+  - level: 36
+    title: "Almirante Experto"
+    xp_required: 18800
+    xp_to_next: 1000
+    description: "Los conceptos más difíciles caen ante tu destreza."
+
+  - level: 37
+    title: "Almirante Experto"
+    xp_required: 19800
+    xp_to_next: 1000
+    description: "Las constelaciones te saludan."
+
+  - level: 38
+    title: "Mariscal Cósmico"
+    xp_required: 20800
+    xp_to_next: 1050
+    description: "Tu jerarquía es cósmica. Los números te escuchan."
+
+  - level: 39
+    title: "Mariscal Cósmico"
+    xp_required: 21850
+    xp_to_next: 1050
+    description: "Casi llegás al máximo. ¡Un empujón más!"
+
+  - level: 40
+    title: "Mariscal Cósmico"
+    xp_required: 22900
+    xp_to_next: 1100
+    description: "Octavo hito. Los novatos te admiran."
+
+  - level: 41
+    title: "Mariscal Galáctico"
+    xp_required: 24000
+    xp_to_next: 1100
+    description: "La galaxia es tu patio."
+
+  - level: 42
+    title: "Mariscal Galáctico"
+    xp_required: 25100
+    xp_to_next: 1150
+    description: "Tu comprensión de los conceptos es total."
+
+  - level: 43
+    title: "Mariscal Galáctico"
+    xp_required: 26250
+    xp_to_next: 1150
+    description: "Cada ejercicio es una rutina que dominás con gracia."
+
+  - level: 44
+    title: "Mariscal Galáctico"
+    xp_required: 27400
+    xp_to_next: 1200
+    description: "El universo se rinde ante tu constancia."
+
+  - level: 45
+    title: "Guardián Estelar"
+    xp_required: 28600
+    xp_to_next: 1200
+    description: "Noveno hito. Solo 5 niveles más."
+
+  - level: 46
+    title: "Guardián Estelar"
+    xp_required: 29800
+    xp_to_next: 1250
+    description: "Los conceptos se someten ante tu sabiduría."
+
+  - level: 47
+    title: "Guardián Estelar"
+    xp_required: 31050
+    xp_to_next: 1250
+    description: "Tu nave es una leyenda del cosmos."
+
+  - level: 48
+    title: "Guardián Estelar"
+    xp_required: 32300
+    xp_to_next: 1300
+    description: "Cada ejercicio es un paso más cerca del último rango."
+
+  - level: 49
+    title: "Guardián Estelar"
+    xp_required: 33600
+    xp_to_next: 1300
+    description: "Uno más. ¡Podés llegar a Comandante Supremo!"
+
+  - level: 50
+    title: "Comandante Supremo"
+    xp_required: 34900
+    xp_to_next: null
+    description: "¡Máximo rango! Sos una leyenda del cosmos. Tinku te saluda."

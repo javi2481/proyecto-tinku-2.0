@@ -1,0 +1,173 @@
+# seeds/coins.yml
+# 23 monedas provinciales argentinas — una por cada provincia + CABA
+# Cada moneda representa una provincia y tiene datos culturales asociados
+# Fuente: docs/TINKU.md §9 — Sistema de gamificación
+
+coins:
+  - id: buenos_aires
+    province: "Buenos Aires"
+    emoji: "🏭"
+    description: "La provincia más grande. Fábricas, campo y costa."
+    capital: "La Plata"
+    fun_fact: "En la provincia de Buenos Aires hay más de 135 partidos, cada uno con su historia."
+
+  - id: caba
+    province: "Ciudad Autónoma de Buenos Aires"
+    emoji: "🏛️"
+    description: "La capital del país. Obelisco, tango y mil cultural."
+    capital: "Buenos Aires"
+    fun_fact: "El obelisco mide 67,5 metros y se inauguró en 1936."
+
+  - id: catamarca
+    province: "Catamarca"
+    emoji: "⛰️"
+    description: "Montañas y valles. El paso de San Francisco la conecta con Chile."
+    capital: "San Fernando del Valle de Catamarca"
+    fun_fact: "Catamarca tiene uno de los yacimientos arqueológicos más importantes de Argentina."
+
+  - id: chaco
+    province: "Chaco"
+    emoji: "🌳"
+    description: "El impenetrable chaqueño. Monte, calor y naturaleza a pleno."
+    capital: "Resistencia"
+    fun_fact: "Resistencia se llama la Ciudad de las Esculturas, con más de 600 obras en las calles."
+
+  - id: chubut
+    province: "Chubut"
+    emoji: "🐋"
+    description: "Ballenas en Puerto Madryn y pingüinos en Punta Tombo."
+    capital: "Rawson"
+    fun_fact: "En Punta Tombo anidan más de medio millón de pingüinos cada año."
+
+  - id: cordoba
+    province: "Córdoba"
+    emoji: "🎹"
+    description: "Las sierras y el folclore. Cuarteto, fernet y siestas largas."
+    capital: "Córdoba"
+    fun_fact: "La Manzana Jesuítica de Córdoba es Patrimonio de la Humanidad por UNESCO."
+
+  - id: corrientes
+    province: "Corrientes"
+    emoji: "🐊"
+    description: "Esteros, lagunas y el río Paraná. Yaguareté y carpinchos."
+    capital: "Corrientes"
+    fun_fact: "Los Esteros del Iberá son la segunda reserva de agua dulce más grande de Sudamérica."
+
+  - id: entre_rios
+    province: "Entre Ríos"
+    emoji: "🌊"
+    description: "Entre dos ríos — Paraná y Uruguay. Carnavales y termas."
+    capital: "Paraná"
+    fun_fact: "El carnaval de Gualeguaychú es el más grande de Argentina."
+
+  - id: formosa
+    province: "Formosa"
+    emoji: "🦜"
+    description: "Norte verde. Selva, esteros y aves coloridas."
+    capital: "Formosa"
+    fun_fact: "En Formosa se encuentra el bañado La Estrella, un humedal espectacular."
+
+  - id: jujuy
+    province: "Jujuy"
+    emoji: "🏔️"
+    description: "Cerro de los Siete Colores y la Quebrada de Humahuaca."
+    capital: "San Salvador de Jujuy"
+    fun_fact: "La Quebrada de Humahuaca es Patrimonio de la Humanidad por UNESCO."
+
+  - id: la_pampa
+    province: "La Pampa"
+    emoji: "🌾"
+    description: "Campo abierto, cielo inmenso. La Pampa profunda."
+    capital: "Santa Rosa"
+    fun_fact: "En La Pampa se puede ver uno de los cielos más limpios del mundo para observar estrellas."
+
+  - id: la_rioja
+    province: "La Rioja"
+    emoji: "🏜️"
+    description: "Tierra de cañones y formaciones rocosas. El Talampaya es increíble."
+    capital: "La Rioja"
+    fun_fact: "El Parque Nacional Talampaya tiene formaciones de 250 millones de años."
+
+  - id: mendoza
+    province: "Mendoza"
+    emoji: "🍇"
+    description: "Viñedos, montañas y el Aconcagua. Vino y nieve."
+    capital: "Mendoza"
+    fun_fact: "El Aconcagua es la montaña más alta de América, con 6960 metros."
+
+  - id: misiones
+    province: "Misiones"
+    emoji: "🌊"
+    description: "Cataratas del Iguazú, selva misionera y tierra colorada."
+    capital: "Posadas"
+    fun_fact: "Las Cataratas del Iguazú tienen 275 saltos y son una de las 7 maravillas naturales del mundo."
+
+  - id: neuquen
+    province: "Neuquén"
+    emoji: "🦎"
+    description: "Dinosaurios, lagos y montañas. El yacimiento más grande de fósiles."
+    capital: "Neuquén"
+    fun_fact: "En Neuquén se encontró el Gigantosaurio Carolinii, uno de los dinosaurios más grandes que existieron."
+
+  - id: rio_negro
+    province: "Río Negro"
+    emoji: "🍎"
+    description: "Manzanas y peras del Valle. Playas en la costa atlántica."
+    capital: "Viedma"
+    fun_fact: "El Valle de Río Negro produce el 70% de las manzanas que se consumen en Argentina."
+
+  - id: salta
+    province: "Salta"
+    emoji: "🎺"
+    description: "Tren a las nubes, empanadas salteñas y el bombo legüero."
+    capital: "Salta"
+    fun_fact: "El Tren a las Nubes pasa a 4200 metros de altura, uno de los ferrocarriles más altos del mundo."
+
+  - id: san_juan
+    province: "San Juan"
+    emoji: "🪨"
+    description: "Tierra de rocas y valles. El parque Ischigualasto (Valle de la Luna)."
+    capital: "San Juan"
+    fun_fact: "El Ischigualasto tiene fósiles de hace 230 millones de años, los más antiguos de Argentina."
+
+  - id: san_luis
+    province: "San Luis"
+    emoji: "🛣️"
+    description: "Las sierras de San Luis y el Valle de Conlara."
+    capital: "San Luis"
+    fun_fact: "San Luis fue una de las primeras provincias en tener internet gratuito en todo su territorio."
+
+  - id: santa_cruz
+    province: "Santa Cruz"
+    emoji: "🧊"
+    description: "Glaciar Perito Moreno y la Patagonia más austral."
+    capital: "Río Gallegos"
+    fun_fact: "El Glaciar Perito Moreno es uno de los pocos glaciares del mundo que sigue creciendo."
+
+  - id: santa_fe
+    province: "Santa Fe"
+    emoji: "🌉"
+    description: "El puente que une el litoral. Rosario, la ciudad de la bandera."
+    capital: "Santa Fe"
+    fun_fact: "La bandera argentina se izó por primera vez en Rosario el 27 de febrero de 1812."
+
+  - id: santiago_del_estero
+    province: "Santiago del Estero"
+    emoji: "🎸"
+    description: "La madre de ciudades. Termas de Río Hondo y chacarera."
+    capital: "Santiago del Estero"
+    fun_fact: "Santiago del Estero es la ciudad más antigua de Argentina, fundada en 1553."
+
+  - id: tierra_del_fuego
+    province: "Tierra del Fuego"
+    emoji: "🐧"
+    description: "El fin del mundo. Glaciares, canales y pingüinos rey."
+    capital: "Ushuaia"
+    fun_fact: "Ushuaia es la ciudad más austral del mundo y tiene un tren que llega hasta la Antártida."
+
+  - id: tucuman
+    province: "Tucumán"
+    emoji: "🥟"
+    description: "La jardín de la república. Empanadas tucumanas y azúcar."
+    capital: "San Miguel de Tucumán"
+    fun_fact: "En Tucumán se declaró la Independencia Argentina el 9 de julio de 1816."

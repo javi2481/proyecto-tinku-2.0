@@ -1,0 +1,104 @@
+# seeds/contexts.yml
+# Contextos argentinos para generar ejercicios culturalmente relevantes
+# Fuente de verdad: docs/CONTENT.md §6
+#
+# IMPORTANTE (§6.5): Los contextos económicos (kiosco, feria, cancha)
+# usan números ficticios redondos, NO precios reales argentinos.
+
+contexts:
+  # ─── Contextos de vida cotidiana ──────────────────────
+  - id: kiosco
+    name: "Kiosco de barrio"
+    description: "El kiosco de la esquina donde los chicos van a comprar alfajores, caramelos y figuritas. Pagar con monedas, calcular vuelto."
+    setting_type: kiosco
+    economic: true  # usa precios ficticios redondos
+    typical_items: ["alfajor de $30", "caramelo de $5", "sobre de figuritas de $25", "chupetín de $10", "gaseosa de $50"]
+    note: "Precios ficticios y redondos. Nunca usar precios reales argentinos porque se vuelven obsoletos por inflación."
+
+  - id: colectivo
+    name: "Colectivo"
+    description: "Subir al colectivo, pagar con tarjeta SUBE, contar paradas, calcular cuántas cuadras faltan."
+    setting_type: colectivo
+    economic: false
+    typical_items: ["tarjeta SUBE", "boleto", "parada", "asiento"]
+
+  - id: plaza
+    name: "Plaza de barrio"
+    description: "La plaza del barrio donde los chicos juegan, se encuentran con amigos, llevan al perro. Bancos, canastos, hamaca."
+    setting_type: plaza
+    economic: false
+    typical_items: ["hamaca", "tobogán", "banco", "árbol", "canasto"]
+
+  - id: escuela
+    name: "Escuela pública"
+    description: "La escuela donde los chicos pasan la mañana. Recreo, patio, salón, pizarrón."
+    setting_type: escuela
+    economic: false
+    typical_items: ["pizarrón", "banco", "cuaderno", "mochila", "recreo"]
+
+  - id: feria
+    name: "Feria del sábado"
+    description: "La feria del barrio donde hay puestos de verduras, ropa, juguetes. Se puede regatear. Los abuelos van temprano."
+    setting_type: feria
+    economic: true  # usa precios ficticios redondos
+    typical_items: ["manzanas de $20 el kilo", "pulsera de $40", "figuritas de $25", "empanadas de $15"]
+    note: "Precios ficticios. En la feria real los precios cambian, acá usamos números redondos para que el chico pueda calcular."
+
+  - id: cancha
+    name: "La cancha"
+    description: "Ir a la cancha con papá o mamá. Comprar entradas, Альфахуés en el entretiempo, contar los goles."
+    setting_type: cancha
+    economic: true  # usa precios ficticios redondos
+    typical_items: ["entrada de $80", "alfajor de $30", "gaseosa de $50", "bandera"]
+    note: "Precios ficticios. Las entradas reales cambian todos los meses."
+
+  - id: cumpleaños
+    name: "Cumpleaños"
+    description: "Un cumpleaños de un compañero. Torta, velitas, regalos, juegos (mancha, escondidas)."
+    setting_type: cumpleaños
+    economic: false
+    typical_items: ["torta", "velitas", "regalo", "globo", "juego"]
+
+  - id: figuritas
+    name: "Figuritas del álbum"
+    description: "Intercambiar figuritas del álbum del Mundial. Contar repetidas, calcular cuántas faltan."
+    setting_type: figuritas
+    economic: false
+    typical_items: ["sobre de figuritas", "álbum", "repetidas", "lacualquieras", "fichas"]
+
+  # ─── Contextos geográficos y naturales ──────────────────
+  - id: naturaleza
+    name: "Naturaleza argentina"
+    description: "Paisajes típicos: la pampa, el litoral, la cordillera, la patagonia. Observar animales y plantas."
+    setting_type: naturaleza
+    economic: false
+    typical_items: ["árbol", "río", "montaña", "animal", "flor"]
+
+  - id: rio
+    name: "El río"
+    description: "Ir al río los fines de semana. Nadar, pescar, hacer asado en la costa."
+    setting_type: rio
+    economic: false
+    typical_items: ["río", "costa", "pez", "lancha", "arena"]
+
+  - id: museo
+    name: "Museo de ciencias naturales"
+    description: "Visitar el museo con la escuela. Ver dinosaurios, fósiles, animales disecados."
+    setting_type: museo
+    economic: false
+    typical_items: ["dinosaurio", "fósil", "exhibición", "guía", "entrada"]
+
+  # ─── Contextos adicionales específicos ──────────────────
+  - id: familia
+    name: "Familia en casa"
+    description: "La vida en familia. Hermanos, padres, abuelos. Ayudar en casa, hacer tarea juntos."
+    setting_type: familia
+    economic: false
+    typical_items: ["hermano", "mamá", "papá", "abuela", "cena"]
+
+  - id: barrio
+    name: "El barrio"
+    description: "El barrio donde viven los chicos. La almacenera, el kiosquero, la panadería, el parquecito."
+    setting_type: barrio
+    economic: false
+    typical_items: ["almacén", "esquina", "vecino", "vereda", "bicicleta"]

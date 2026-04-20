@@ -1,0 +1,480 @@
+# seeds/concepts.yml
+# Catálogo de conceptos pedagógicos — Ola 1
+# Fuente de verdad: docs/CONTENT.md §3.3–3.5, §4.2
+#
+# Convención de IDs:
+#   M1_ = 1° grado, M2_ = 2° grado, M3_ = 3° grado (matemática)
+#   S1_ = 1° grado socioemocional (Isla de los Amigos)
+
+concepts:
+  # ═══════════════════════════════════════════════════════════
+  # Isla de los Números — Numeración (1° grado)
+  # ═══════════════════════════════════════════════════════════
+  - id: M1_NUM_HASTA_20
+    region_id: num-numeracion
+    name: "Números hasta 20"
+    description: "Reconocer, leer y escribir números del 1 al 20. Contar objetos, identificar el número que viene antes y después."
+    grade: 1
+    difficulty_range: [0.1, 0.3]
+    province_coin: misiones
+    nap_alignment: "NAP 1° grado — Número: numerosidad hasta 20"
+    prerequisites: []
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [lucia, camila, mateo]
+
+  - id: M1_NUM_HASTA_100
+    region_id: num-numeracion
+    name: "Números hasta 100"
+    description: "Contar, leer y escribir números hasta 100. Identificar decenas y unidades. Comparar números de dos dígitos."
+    grade: 1
+    difficulty_range: [0.2, 0.5]
+    province_coin: buenos_aires
+    nap_alignment: "NAP 1° grado — Número: números hasta 100"
+    prerequisites: [M1_NUM_HASTA_20]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [sofia, mateo, valentina]
+
+  - id: M1_CONTEO_ORDINAL
+    region_id: num-numeracion
+    name: "Orden y conteo ordinal"
+    description: "Usar números ordinales: primero, segundo, tercero... Ordenar secuencias y identificar posiciones."
+    grade: 1
+    difficulty_range: [0.15, 0.35]
+    province_coin: cordoba
+    nap_alignment: "NAP 1° grado — Número: ordinalidad"
+    prerequisites: [M1_NUM_HASTA_20]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [joaquin, lucia, valentina]
+
+  - id: M1_COMPARACION_NUM
+    region_id: num-numeracion
+    name: "Comparar cantidades"
+    description: "Comparar cantidades: más, menos, igual. Identificar cuál grupo tiene más elementos. Usar símbolos >, <, =."
+    grade: 1
+    difficulty_range: [0.2, 0.45]
+    province_coin: santa_fe
+    nap_alignment: "NAP 1° grado — Número: comparación de cantidades"
+    prerequisites: [M1_NUM_HASTA_20]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [lautaro, sofia, camila]
+
+  - id: M1_PARES_IMPARES
+    region_id: num-numeracion
+    name: "Pares e impares"
+    description: "Identificar números pares e impares. Reconocer patrones: los pares terminan en 0, 2, 4, 6, 8."
+    grade: 1
+    difficulty_range: [0.3, 0.55]
+    province_coin: mendoza
+    nap_alignment: "NAP 1° grado — Número: paridad"
+    prerequisites: [M1_NUM_HASTA_20]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [mateo, tomas, benjamin]
+
+  # ═══════════════════════════════════════════════════════════
+  # Isla de los Números — Operaciones (1° grado)
+  # ═══════════════════════════════════════════════════════════
+  - id: M1_SUM_SIN_REAGR_10
+    region_id: num-operaciones
+    name: "Suma sin reagrupamiento hasta 10"
+    description: "Sumar dos números cuyo resultado no supera 10. Sin llevar. Ej: 3 + 4 = 7."
+    grade: 1
+    difficulty_range: [0.15, 0.4]
+    province_coin: salta
+    nap_alignment: "NAP 1° grado — Operaciones: suma sin reagrupar hasta 10"
+    prerequisites: [M1_NUM_HASTA_20]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [lucia, valentina, joaquin]
+
+  - id: M1_SUM_SIN_REAGR_20
+    region_id: num-operaciones
+    name: "Suma sin reagrupamiento hasta 20"
+    description: "Sumar dos números cuyo resultado no supera 20. Sin llevar. Ej: 12 + 5 = 17."
+    grade: 1
+    difficulty_range: [0.2, 0.5]
+    province_coin: jujuy
+    nap_alignment: "NAP 1° grado — Operaciones: suma sin reagrupar hasta 20"
+    prerequisites: [M1_SUM_SIN_REAGR_10]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [sofia, mateo, lautaro]
+
+  - id: M1_SUM_SIN_REAGR_100
+    region_id: num-operaciones
+    name: "Suma sin reagrupamiento hasta 100"
+    description: "Sumar dos números de dos dígitos sin llevar. Ej: 23 + 15 = 38."
+    grade: 1
+    difficulty_range: [0.3, 0.65]
+    province_coin: buenos_aires
+    nap_alignment: "NAP 1° grado — Operaciones: suma sin reagrupar hasta 100"
+    prerequisites: [M1_SUM_SIN_REAGR_20, M1_NUM_HASTA_100]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [lucia, sofia, mateo]
+
+  - id: M1_RESTA_SIMPLE_10
+    region_id: num-operaciones
+    name: "Resta simple hasta 10"
+    description: "Restar dos números cuyo minuendo no supera 10. Sin pedirme prestado. Ej: 8 - 3 = 5."
+    grade: 1
+    difficulty_range: [0.15, 0.4]
+    province_coin: tucuman
+    nap_alignment: "NAP 1° grado — Operaciones: resta simple hasta 10"
+    prerequisites: [M1_SUM_SIN_REAGR_10]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [valentina, lautaro, camila]
+
+  - id: M1_RESTA_SIMPLE_20
+    region_id: num-operaciones
+    name: "Resta simple hasta 20"
+    description: "Restar dos números cuyo minuendo no supera 20. Sin pedirme prestado. Ej: 16 - 7 = 9."
+    grade: 1
+    difficulty_range: [0.25, 0.55]
+    province_coin: entre_rios
+    nap_alignment: "NAP 1° grado — Operaciones: resta simple hasta 20"
+    prerequisites: [M1_RESTA_SIMPLE_10, M1_NUM_HASTA_100]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [joaquin, lucia, tomas]
+
+  - id: M1_COMPLEMENTO_10
+    region_id: num-operaciones
+    name: "Complemento a 10"
+    description: "Encontrar qué número sumado a otro da 10. Ej: 7 + ? = 10. Fundamental para la suma con reagrupamiento."
+    grade: 1
+    difficulty_range: [0.25, 0.55]
+    province_coin: chaco
+    nap_alignment: "NAP 1° grado — Operaciones: complemento a 10"
+    prerequisites: [M1_SUM_SIN_REAGR_10]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [mateo, benjamin, sofia]
+
+  # ═══════════════════════════════════════════════════════════
+  # Isla de los Números — Espacio y Medida (1° grado)
+  # ═══════════════════════════════════════════════════════════
+  - id: M1_FIGURAS_BASICAS
+    region_id: num-espacio-medida
+    name: "Figuras básicas"
+    description: "Reconocer círculo, cuadrado, triángulo y rectángulo. Identificar figuras en objetos cotidianos."
+    grade: 1
+    difficulty_range: [0.1, 0.35]
+    province_coin: corrientes
+    nap_alignment: "NAP 1° grado — Espacio y Medida: figuras geométricas"
+    prerequisites: []
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [camila, valentina, mateo]
+
+  - id: M1_MEDIDAS_COMPARATIVAS
+    region_id: num-espacio-medida
+    name: "Medidas comparativas"
+    description: "Comparar longitudes, alturas y pesos: más largo, más corto, más alto, más bajo, más pesado, más liviano."
+    grade: 1
+    difficulty_range: [0.1, 0.4]
+    province_coin: formosa
+    nap_alignment: "NAP 1° grado — Espacio y Medida: comparación de magnitudes"
+    prerequisites: []
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [lautaro, lucia, joaquin]
+
+  - id: M1_TIEMPO_BASICO
+    region_id: num-espacio-medida
+    name: "Tiempo básico"
+    description: "Días de la semana, meses, antes/después, ayer/hoy/mañana. Secuencias temporales simples."
+    grade: 1
+    difficulty_range: [0.1, 0.35]
+    province_coin: san_luis
+    nap_alignment: "NAP 1° grado — Espacio y Medida: tiempo y secuencias"
+    prerequisites: []
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [sofia, mateo, camila]
+
+  - id: M1_DINERO_MONEDAS
+    region_id: num-espacio-medida
+    name: "Monedas y dinero"
+    description: "Reconocer monedas argentinas ($1, $2, $5, $10). Sumar monedas, pagar con combinaciones simples. Usa precios ficticios redondos."
+    grade: 1
+    difficulty_range: [0.2, 0.55]
+    province_coin: la_rioja
+    nap_alignment: "NAP 1° grado — Número: uso social del dinero"
+    prerequisites: [M1_NUM_HASTA_100, M1_SUM_SIN_REAGR_10]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [lucia, joaquin, tomas]
+
+  # ═══════════════════════════════════════════════════════════
+  # Isla de los Números — Numeración (2° grado parcial)
+  # ═══════════════════════════════════════════════════════════
+  - id: M2_NUM_HASTA_1000
+    region_id: num-numeracion
+    name: "Números hasta 1000"
+    description: "Leer, escribir y comparar números hasta 1000. Centenas, decenas y unidades."
+    grade: 2
+    difficulty_range: [0.4, 0.7]
+    province_coin: catamarca
+    nap_alignment: "NAP 2° grado — Número: números hasta 1000"
+    prerequisites: [M1_NUM_HASTA_100]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [tomas, sofia, mateo]
+
+  - id: M2_VALOR_POSICIONAL
+    region_id: num-numeracion
+    name: "Valor posicional"
+    description: "Unidades, decenas y centenas. Comprender que en 234 hay 2 centenas, 3 decenas y 4 unidades."
+    grade: 2
+    difficulty_range: [0.45, 0.75]
+    province_coin: santiago_del_estero
+    nap_alignment: "NAP 2° grado — Número: valor posicional"
+    prerequisites: [M2_NUM_HASTA_1000]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [benjamin, valentina, lucia]
+
+  # ═══════════════════════════════════════════════════════════
+  # Isla de los Números — Operaciones (2°/3° grado parcial)
+  # ═══════════════════════════════════════════════════════════
+  - id: M2_SUM_CON_REAGR
+    region_id: num-operaciones
+    name: "Suma con reagrupamiento"
+    description: "Sumar números de dos dígitos llevando. Ej: 47 + 36 = 83."
+    grade: 2
+    difficulty_range: [0.5, 0.8]
+    province_coin: neuquen
+    nap_alignment: "NAP 2° grado — Operaciones: suma con reagrupamiento"
+    prerequisites: [M1_SUM_SIN_REAGR_100, M1_COMPLEMENTO_10]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [lucia, joaquin, tomas]
+
+  - id: M2_RESTA_CON_REAGR
+    region_id: num-operaciones
+    name: "Resta con reagrupamiento"
+    description: "Restar números de dos dígitos pidiendo prestado. Ej: 52 - 27 = 25."
+    grade: 2
+    difficulty_range: [0.5, 0.8]
+    province_coin: rio_negro
+    nap_alignment: "NAP 2° grado — Operaciones: resta con reagrupamiento"
+    prerequisites: [M1_RESTA_SIMPLE_20, M1_SUM_SIN_REAGR_100]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [mateo, sofia, valentina]
+
+  - id: M2_MULT_INICIAL
+    region_id: num-operaciones
+    name: "Multiplicación como suma repetida"
+    description: "Introducción a la multiplicación: 3 × 4 = 4 + 4 + 4. Sumar grupos iguales."
+    grade: 2
+    difficulty_range: [0.5, 0.75]
+    province_coin: chubut
+    nap_alignment: "NAP 2° grado — Operaciones: multiplicación inicial"
+    prerequisites: [M1_SUM_SIN_REAGR_100]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [lautaro, mateo, lucia]
+
+  - id: M3_TABLAS_MULT_2_5_10
+    region_id: num-operaciones
+    name: "Tablas de multiplicar 2, 5 y 10"
+    description: "Memorizar y aplicar las tablas del 2, 5 y 10. Reconocer patrones en las tablas."
+    grade: 3
+    difficulty_range: [0.5, 0.8]
+    province_coin: tierra_del_fuego
+    nap_alignment: "NAP 3° grado — Operaciones: tablas de multiplicar"
+    prerequisites: [M2_MULT_INICIAL]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [tomas, sofia, benjamin]
+
+  - id: M3_DIVISION_INTRO
+    region_id: num-operaciones
+    name: "División como reparto"
+    description: "Introducción a la división: repartir en partes iguales. Si tengo 12 alfajores y 3 amigos, ¿cuántos le tocan a cada uno?"
+    grade: 3
+    difficulty_range: [0.6, 0.85]
+    province_coin: san_juan
+    nap_alignment: "NAP 3° grado — Operaciones: división como reparto"
+    prerequisites: [M2_MULT_INICIAL]
+    type_distribution:
+      mcq: 0.40
+      numeric_input: 0.25
+      h5p_fill_blank: 0.15
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [joaquin, camila, mateo]
+
+  # ═══════════════════════════════════════════════════════════
+  # Isla de los Amigos — Autoconciencia
+  # ═══════════════════════════════════════════════════════════
+  - id: S1_RECONOCER_EMOCIONES
+    region_id: ami-autoconciencia
+    name: "Reconocer emociones"
+    description: "Identificar emociones básicas propias: alegría, tristeza, enojo, miedo, sorpresa, calma. Asociar situaciones con emociones."
+    grade: 1
+    difficulty_range: [0.1, 0.3]
+    province_coin: misiones
+    nap_alignment: "CASEL Self-Awareness: reconocer emociones"
+    prerequisites: []
+    type_distribution:
+      socioemotional_dilemma: 0.50
+      mcq: 0.30
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [lucia, camila, valentina, mateo, sofia]
+
+  - id: S1_NOMBRAR_EMOCIONES
+    region_id: ami-autoconciencia
+    name: "Nombrar emociones"
+    description: "Poner nombre a lo que uno siente. Ampliar vocabulario emocional más allá de 'bien' y 'mal'. Distinguir emociones similares."
+    grade: 1
+    difficulty_range: [0.15, 0.4]
+    province_coin: cordoba
+    nap_alignment: "CASEL Self-Awareness: nombrar emociones con precisión"
+    prerequisites: [S1_RECONOCER_EMOCIONES]
+    type_distribution:
+      socioemotional_dilemma: 0.50
+      mcq: 0.30
+      h5p_drag_drop: 0.10
+      h5p_match: 0.10
+    characters_to_use: [mateo, joaquin, lucia, tomas, benjamin]
+
+  # ═══════════════════════════════════════════════════════════
+  # Isla de los Amigos — Autorregulación
+  # ═══════════════════════════════════════════════════════════
+  - id: S1_CALMARSE
+    region_id: ami-autorregulacion
+    name: "Estrategias para calmarse"
+    description: "Estrategias simples para calmarse cuando uno está muy enojado o muy asustado: respirar hondo, contar, pedir ayuda."
+    grade: 1
+    difficulty_range: [0.2, 0.45]
+    province_coin: salta
+    nap_alignment: "CASEL Self-Management: regulación emocional"
+    prerequisites: [S1_NOMBRAR_EMOCIONES]
+    type_distribution:
+      socioemotional_dilemma: 0.60
+      mcq: 0.25
+      h5p_drag_drop: 0.15
+    characters_to_use: [sofia, camila, lautaro, valentina, mateo]
+
+  - id: S1_ESPERAR_TURNO
+    region_id: ami-autorregulacion
+    name: "Esperar el turno"
+    description: "Practicar la demora de gratificación y esperar el turno en juegos y conversaciones. Aprender que esperar no es igual a no conseguir."
+    grade: 1
+    difficulty_range: [0.2, 0.5]
+    province_coin: buenos_aires
+    nap_alignment: "CASEL Self-Management: demora de gratificación"
+    prerequisites: [S1_CALMARSE]
+    type_distribution:
+      socioemotional_dilemma: 0.60
+      mcq: 0.25
+      h5p_drag_drop: 0.15
+    characters_to_use: [lautaro, lucia, joaquin, tomas, sofia]
+
+  - id: S1_PEDIR_AYUDA
+    region_id: ami-autorregulacion
+    name: "Pedir ayuda"
+    description: "Reconocer cuándo uno necesita ayuda y pedirla. Diferenciar entre 'puedo hacerlo solo' y 'necesito que me acompañen'."
+    grade: 1
+    difficulty_range: [0.2, 0.45]
+    province_coin: mendoza
+    nap_alignment: "CASEL Self-Management: pedir ayuda apropiadamente"
+    prerequisites: [S1_CALMARSE]
+    type_distribution:
+      socioemotional_dilemma: 0.60
+      mcq: 0.25
+      h5p_drag_drop: 0.15
+    characters_to_use: [benjamin, valentina, martina, mateo, camila]

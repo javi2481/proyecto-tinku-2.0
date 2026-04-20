@@ -1,0 +1,42 @@
+# seeds/regions.yml
+# Regiones dentro de cada isla pedagógica — Ola 1
+# Fuente de verdad: docs/CONTENT.md §3.2, §4.2
+
+regions:
+  # ─── Isla de los Números ────────────────────────────────
+  - id: num-numeracion
+    island_id: numeros
+    name: "Numeración"
+    description: "Al pie del volcán. Conceptos básicos de número, conteo, orden y comparación. Tonos cálidos, flujos de lava luminosa."
+    order: 1
+
+  - id: num-operaciones
+    island_id: numeros
+    name: "Operaciones"
+    description: "Laderas del volcán. Suma, resta, multiplicación y división. Tonos cobrizos, cristales geométricos."
+    order: 2
+
+  - id: num-espacio-medida
+    island_id: numeros
+    name: "Espacio y Medida"
+    description: "Alrededor del volcán en terrenos más amplios. Medidas, figuras, comparación de magnitudes. Tonos arenosos, formas geométricas como arquitectura."
+    order: 3
+
+  - id: num-problemas
+    island_id: numeros
+    name: "Resolución de Problemas"
+    description: "Cumbre del volcán. Problemas integradores que combinan operaciones, numeración y medida en contextos reales. Tonos dorados, caminos que se unen."
+    order: 4
+
+  # ─── Isla de los Amigos ────────────────────────────────
+  - id: ami-autoconciencia
+    island_id: amigos
+    name: "Autoconciencia"
+    description: "Claro del bosque iluminado. Los chicos aprenden a reconocer y nombrar sus emociones. Árboles con hojas doradas, reflejos en el agua."
+    order: 1
+
+  - id: ami-autorregulacion
+    island_id: amigos
+    name: "Autorregulación"
+    description: "Cascada y sendero sereno. Estrategias para calmarse, esperar turno, y pedir ayuda. Sonidos de agua, piedras suaves, senderos tranquilos."
+    order: 2

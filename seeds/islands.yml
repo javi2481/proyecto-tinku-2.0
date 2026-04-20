@@ -1,0 +1,24 @@
+# seeds/islands.yml
+# Catálogo de islas pedagógicas — Ola 1
+# Fuente de verdad: docs/CONTENT.md
+
+islands:
+  - id: numeros
+    name: "Isla de los Números"
+    description: "Isla volcánica donde los chicos exploran el mundo de la matemática. Desde conteo básico hasta operaciones y medidas, cada región reveals patrones numéricos con la guía de Quipu."
+    theme_color: "#F59E0B"  # amber/volcanic warmth
+    nap_alignment: "NAP Matemática 1° a 3° grado — Número, Operaciones, Medida"
+    regions:
+      - num-numeracion
+      - num-operaciones
+      - num-espacio-medida
+      - num-problemas
+
+  - id: amigos
+    name: "Isla de los Amigos"
+    description: "Isla de bosque calido donde los chicos exploran sus emociones y aprenden a convivir. Autoconciencia y autorregulación son las primeras competencias CASEL que se trabajan."
+    theme_color: "#10B981"  # emerald/forest warmth
+    nap_alignment: "NAP Ciudadanía y Convivencia — Competencias socioemocionales"
+    regions:
+      - ami-autoconciencia
+      - ami-autorregulacion

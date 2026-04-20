@@ -1,0 +1,94 @@
+# seeds/characters.yml
+# Los 10 personajes del cast de Tinku
+# Fuente de verdad: docs/CONTENT.md §5.1, §5.2
+
+characters:
+  - id: lucia
+    name: "Lucía"
+    age: 8
+    city: "Rosario"
+    interests: ["dibujar", "fútbol", "animales"]
+    personality_traits: ["curiosa", "valiente", "creativa"]
+    contexts: ["kiosco", "cancha", "cumpleaños", "plaza"]
+    description: "Le gusta dibujar, juega al fútbol, tiene un perro llamado Rulo. Va a la escuela pública del barrio."
+
+  - id: mateo
+    name: "Mateo"
+    age: 9
+    city: "Bariloche"
+    interests: ["esquiar", "figuritas", "naturaleza"]
+    personality_traits: ["observador", "paciente", "aventurero"]
+    contexts: ["escuela", "figuritas", "naturaleza"]
+    description: "Le encanta esquiar, colecciona figuritas, es hijo único. Habla de las montañas y el lago."
+
+  - id: valentina
+    name: "Valentina"
+    age: 7
+    city: "Córdoba"
+    interests: ["canto", "animales", "juegos"]
+    personality_traits: ["cariñosa", "entusiasta", "compañera"]
+    contexts: ["escuela", "cumpleaños", "familia"]
+    description: "Canta en el coro de la escuela, tiene una hermana melliza, le gustan los animales."
+
+  - id: joaquin
+    name: "Joaquín"
+    age: 10
+    city: "Salta"
+    interests: ["música", "historia", "feria"]
+    personality_traits: ["contante", "respetuoso", "orgulloso"]
+    contexts: ["feria", "escuela", "cumpleaños"]
+    description: "Toca el bombo, le gusta la historia, va a la feria con su abuelo los sábados."
+
+  - id: camila
+    name: "Camila"
+    age: 6
+    city: "Mendoza"
+    interests: ["colores", "uvas", "jugar"]
+    personality_traits: ["alegre", "pequeña", "imaginativa"]
+    contexts: ["naturaleza", "familia", "plaza"]
+    description: "Es la más chica del cast. Le gustan las uvas y los colores. Sus papás tienen un viñedo."
+
+  - id: tomas
+    name: "Tomás"
+    age: 11
+    city: "Ushuaia"
+    interests: ["ciencia", "pingüinos", "biología marina"]
+    personality_traits: ["investigador", "apasionado", "mayor"]
+    contexts: ["ciencia", "naturaleza", "escuela"]
+    description: "El mayor del cast. Le interesa la ciencia, le apasionan los pingüinos, quiere ser biólogo marino."
+
+  - id: sofia
+    name: "Sofía"
+    age: 8
+    city: "Buenos Aires - Boedo"
+    interests: ["fútbol", "vóley", "música"]
+    personality_traits: ["fanática", "deportiva", "barrial"]
+    contexts: ["cancha", "plaza", "barrio"]
+    description: "Fanática de San Lorenzo, juega al vóley, va al parque los domingos con su papá."
+
+  - id: benjamin
+    name: "Benjamín"
+    age: 9
+    city: "Posadas"
+    interests: ["cuentos", "guaraní", "río"]
+    personality_traits: ["bilingüe", "narrador", "curioso"]
+    contexts: ["río", "naturaleza", "escuela"]
+    description: "Habla español y guaraní, le gusta contar historias, va al río los fines de semana."
+
+  - id: martina
+    name: "Martina"
+    age: 10
+    city: "La Plata"
+    interests: ["dinosaurios", "fósiles", "ciencia"]
+    personality_traits: ["paleontóloga", "coleccionista", "estudiosa"]
+    contexts: ["museo", "ciencia", "naturaleza"]
+    description: "Le gustan los dinosaurios, es nieta de paleontólogo, colecciona fósiles y rocas."
+
+  - id: lautaro
+    name: "Lautaro"
+    age: 7
+    city: "Tucumán"
+    interests: ["empanadas", "tenis", "familia"]
+    personality_traits: ["goloso", "deportivo", "familiar"]
+    contexts: ["comida", "familia", "plaza"]
+    description: "Le encanta comer empanadas tucumanas, juega al tenis, tiene dos hermanos mayores."
