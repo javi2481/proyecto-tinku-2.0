@@ -1,27 +1,21 @@
-import type { Metadata } from "next";
-import { Andika } from "next/font/google";
-import "./globals.css";
+import { redirect } from 'next/navigation';
+import { createServerSupabase } from '@/lib/supabase/server';
 
-const andika = Andika({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-andika",
-  display: "swap",
-});
+/**
+ * Layout del alumno. Activa `.student-scope` (Andika + tap targets infantiles).
+ * Defense in depth: valida sesión + role=student en server.
+ */
+export default async function StudentLayout({ children }: { children: React.ReactNode }) {
+  const supabase = await createServerSupabase();
+  const { data: { user } } = await supabase.auth.getUser();
+  const role = (user?.user_metadata as { role?: string } | undefined)?.role;
 
-export const metadata: Metadata = {
-  title: "Tinku 2.0",
-  description: "Plataforma pedagógica tri-lateral para alumnos, padres y docentes",
-};
+  if (!user) redirect('/entrar');
+  if (role !== 'student') redirect('/dashboard');
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
   return (
-    <html lang="es-AR" className={`${andika.variable}`}>
-      <body className="font-sans antialiased">{children}</body>
-    </html>
+    <div className="student-scope min-h-screen bg-gradient-to-b from-tinku-sea/10 via-tinku-mist to-tinku-sand/30">
+      {children}
+    </div>
   );
 }

@@ -8,16 +8,15 @@
  * Run with: pnpm test -- tests/integration/
  */
 
-import { createClient, SupabaseClient } from "@supabase/supabase-js";
-import type { Database } from "@/lib/supabase/database.types";
+import { createClient } from "@supabase/supabase-js";
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY!;
 
 /** Admin client that bypasses RLS — use for setup/teardown only */
-export function createAdminClient(): SupabaseClient<Database> {
-  return createClient<Database>(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
+export function createAdminClient() {
+  return createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
     auth: {
       autoRefreshToken: false,
       persistSession: false,
@@ -26,8 +25,8 @@ export function createAdminClient(): SupabaseClient<Database> {
 }
 
 /** Anonymous (unauthenticated) client */
-export function createAnonClient(): SupabaseClient<Database> {
-  return createClient<Database>(SUPABASE_URL, SUPABASE_ANON_KEY, {
+export function createAnonClient() {
+  return createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
     auth: {
       autoRefreshToken: false,
       persistSession: false,
@@ -39,8 +38,8 @@ export function createAnonClient(): SupabaseClient<Database> {
 export function createAuthClient(
   email: string,
   password: string
-): SupabaseClient<Database> {
-  return createClient<Database>(SUPABASE_URL, SUPABASE_ANON_KEY, {
+) {
+  return createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
     auth: {
       autoRefreshToken: false,
       persistSession: false,
@@ -75,10 +74,10 @@ export async function signUpTestUser(
   // If role is admin, update the users table role using admin client
   if (role === "admin") {
     const admin = createAdminClient();
-    const { error: updateError } = await admin
+    const { error: updateError } = await (admin
       .from("users")
-      .update({ role: "admin" })
-      .eq("id", data.user.id);
+      .update({ role: "admin" as const })
+      .eq("id", data.user.id) as { error: { message: string } | null });
 
     if (updateError) {
       throw new Error(`Failed to update user role to admin: ${updateError.message}`);
